@@ -1,0 +1,48 @@
+{
+    "dataRoles":[
+        {
+            "displayName": "Date, Hour",
+            "name": "DateHour",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Media Type",
+            "name": "MediaType",
+            "kind": "Grouping"
+        },
+        {
+        "displayName": "Measure Data",
+        "name": "measure",
+        "kind": "Measure"
+        }
+    ],
+    "objects": {},
+    "dataViewMappings": [
+        {
+            
+            "table": {
+                "rows": {
+                    "select": [
+                        {
+                            "for": {
+                                "in": "DateHour"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "MediaType"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "measure"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+    
+    
+}
